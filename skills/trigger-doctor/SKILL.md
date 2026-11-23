@@ -1,7 +1,7 @@
 ---
 name: trigger-doctor
 description: "Use when skills never fire when they should, after installing community skill packs, or for library hygiene - audit and rewrite skill triggers so relevant skills load at the right times."
-version: 1.0.0
+version: 1.1.0
 author: Darin Zantzer (DeezGit21), Hermes Agent
 license: MIT
 platforms: [linux, macos, windows]
