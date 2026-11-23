@@ -53,8 +53,9 @@ That's the scanner's first run on the library it was built in — a library that
 been curated and hand-cleaned once. It still hid **19 skills that are structurally unable to
 trigger**: ten with 1–2 character placeholder descriptions, three with frontmatter names that
 don't match their directories, and one skill whose `platforms:` line excludes the host OS
-entirely. Most were zero-use skills nobody missed — for the simple reason that they had
-never once fired.
+entirely. Every one of them was installed and enabled the whole time — they never fired
+because their triggers were written incorrectly, so the agent overlooked them even on the
+exact tasks they were built for.
 
 ## Install
 
