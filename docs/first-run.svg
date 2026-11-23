@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="900" height="300" rx="16" fill="#0f172a"/>
+  <text x="450" y="42" text-anchor="middle" fill="#e2e8f0" font-size="21" font-weight="600">First run on a real library</text>
+  <text x="450" y="66" text-anchor="middle" fill="#94a3b8" font-size="13">324 skills scanned on a live Windows Hermes install (Nov 2026) &#8212; real numbers, not a demo</text>
+
+  <!-- stacked bar: hard 19 / info 294 / clean 11 of 324 -->
+  <rect x="30"   y="140" width="49"  height="54" fill="#ef4444"/>
+  <rect x="79"   y="140" width="773" height="54" fill="#f59e0b"/>
+  <rect x="852"  y="140" width="18"  height="54" fill="#22c55e"/>
+  <rect x="30"   y="140" width="840" height="54" fill="none" stroke="#334155" stroke-width="1"/>
+
+  <text x="54"  y="215" fill="#f87171" font-size="13" font-weight="600">19 hard</text>
+  <text x="54"  y="233" fill="#94a3b8" font-size="11">broken: will never fire</text>
+
+  <text x="450" y="215" text-anchor="middle" fill="#fbbf24" font-size="13" font-weight="600">294 info</text>
+  <text x="450" y="233" text-anchor="middle" fill="#94a3b8" font-size="11">loads fine, but trigger could be sharper</text>
+
+  <text x="861" y="125" text-anchor="end" fill="#4ade80" font-size="13" font-weight="600">11 clean</text>
+
+  <text x="450" y="270" text-anchor="middle" fill="#64748b" font-size="12">Even a healthy-looking library hides 19 skills that are structurally unable to trigger &#8212; most of them 0-use skills nobody missed because they never fired.</text>
+</svg>

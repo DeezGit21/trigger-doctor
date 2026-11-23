@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 340" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <rect width="900" height="340" rx="16" fill="#0f172a"/>
+
+  <!-- BEFORE card -->
+  <rect x="30" y="26" width="840" height="118" rx="12" fill="#1e293b" stroke="#ef4444" stroke-width="2"/>
+  <text x="54" y="54" fill="#ef4444" font-size="13" font-weight="700">BEFORE — structurally unable to trigger</text>
+  <text x="54" y="80" fill="#cbd5e1" font-size="13" font-family="Consolas, monospace">name: github-issues</text>
+  <text x="54" y="102" fill="#cbd5e1" font-size="13" font-family="Consolas, monospace">description: github-issues &#8212; Create, triage, label, assign GitHub issues via gh or REST.</text>
+  <text x="54" y="128" fill="#f87171" font-size="12">&#10007; repeats the skill name &#183; states the tool, not the situation &#183; matches none of the user's phrasing</text>
+
+  <!-- AFTER card -->
+  <rect x="30" y="162" width="840" height="118" rx="12" fill="#1e293b" stroke="#22c55e" stroke-width="2"/>
+  <text x="54" y="190" fill="#22c55e" font-size="13" font-weight="700">AFTER — trigger-first</text>
+  <text x="54" y="216" fill="#cbd5e1" font-size="13" font-family="Consolas, monospace">description: "Use when creating, triaging, labeling or assigning GitHub issues</text>
+  <text x="54" y="238" fill="#cbd5e1" font-size="13" font-family="Consolas, monospace">              on D's repos (DeezGit21/arctic-hub, AC-DRs-App) via gh CLI or REST."</text>
+  <text x="54" y="264" fill="#4ade80" font-size="12">&#10003; front-loads the situation &#183; bakes in the user's real vocabulary &#183; retrieved the moment issues come up</text>
+
+  <text x="450" y="316" text-anchor="middle" fill="#94a3b8" font-size="13">Same skill. Same capability. One version sits dead in the catalog; the other fires.</text>
+</svg>
