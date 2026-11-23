@@ -30,7 +30,21 @@ def parse_frontmatter(text):
     fm_text = text[3:end.start()]
     fm = {}
     current_key = None
+    block = None  # active block scalar: {'fold': bool, 'lines': []}
+
     for line in fm_text.splitlines():
+        if block is not None:
+            if not line.strip():
+                block["lines"].append("")
+                continue
+            if line[:1] in (" ", "\t"):
+                block["lines"].append(line.strip())
+                continue
+            # non-indented, non-blank line: block scalar ends
+            joiner = " " if block["fold"] else "\n"
+            if current_key:
+                fm[current_key] = joiner.join(block["lines"]).strip()
+            block = None
         if not line.strip():
             continue
         m_item = re.match(r"^\s*-\s+(.*)$", line)
@@ -41,9 +55,15 @@ def parse_frontmatter(text):
         m = re.match(r"^([A-Za-z_][\w-]*):\s*(.*)$", line)
         if m:
             current_key = m.group(1).lower()
-            val = m.group(2).strip().strip('"\'')
+            val = m.group(2).strip().strip('"\'' )
             if val:
                 fm[current_key] = val
+                if val in (">", ">-", "|", "|-", "|+", ">+"):
+                    block = {"fold": val.startswith(">"), "lines": []}
+    if block is not None:
+        joiner = " " if block["fold"] else "\n"
+        if current_key:
+            fm[current_key] = joiner.join(block["lines"]).strip()
     return fm, None
 
 def max_usage(usage, name):
